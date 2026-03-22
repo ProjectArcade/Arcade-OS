@@ -1,0 +1,18 @@
+# Build output
+out/
+*.iso
+*.img
+
+# Build work directory
+/tmp/arcade-work/
+work/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
