@@ -126,3 +126,6 @@ xdg-utils
 xfsprogs
 xl2tpd
 zsh
+fastfetch
+figlet
+zsh-autosuggestions
