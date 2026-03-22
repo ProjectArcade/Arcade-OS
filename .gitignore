@@ -7,6 +7,11 @@ out/
 /tmp/arcade-work/
 work/
 
+# Package cache
+cache/
+*.pkg.tar.zst
+*.pkg.tar.xz
+
 # OS files
 .DS_Store
 Thumbs.db
@@ -16,10 +21,15 @@ Thumbs.db
 .idea/
 *.swp
 *~
-work/
 
 # Work Directory
 /profile/work
 
 # ISO Directory
 /profile/out
+
+# QEMU
+*.qcow2
+*.vmdk
+*.vdi
+qemu-*/

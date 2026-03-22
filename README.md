@@ -16,7 +16,6 @@
 
 - Arch Linux machine or VM to build
 - `archiso` and `git` installed
-
 ```bash
 sudo pacman -S archiso git
 ```
@@ -24,7 +23,6 @@ sudo pacman -S archiso git
 ---
 
 ## Fork & Build
-
 ```bash
 # 1. Fork this repo on GitHub, then clone your fork
 git clone https://github.com/ProjectArcade/Arcade-OS
@@ -38,16 +36,40 @@ ls -lh out/
 ```
 
 ### Clean rebuild
-
 ```bash
-sudo rm -rf /tmp/arcade-work ./out
-sudo mkarchiso -v -w /tmp/arcade-work -o ./out Arcade-os/
+sudo rm -rf ./work ./out
+sudo mkarchiso -v -w work/ -o out/ .
 ```
 
 ---
 
-## Project Structure
+## Testing (QEMU)
+```bash
+# Install QEMU
+sudo pacman -S qemu-full
 
+# Boot the ISO
+qemu-system-x86_64 \
+  -m 2G \
+  -cdrom out/arcadelinux-*.iso \
+  -boot d \
+  -vga vmware
+```
+
+## Booting on Real Hardware (Highly Recommended for Developers)
+```bash
+# Find your USB drive (e.g. /dev/sdb — double check before running)
+lsblk
+
+# Flash the ISO
+sudo dd if=out/arcadelinux-*.iso of=/dev/sdX bs=4M status=progress oflag=sync
+```
+
+Then plug the USB into your machine, reboot, and select it from your BIOS boot menu.
+
+---
+
+## Project Structure
 ```
 Arcade-OS/
 └── Arcade-OS/
