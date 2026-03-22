@@ -17,3 +17,9 @@ Thumbs.db
 *.swp
 *~
 work/
+
+# Work Directory
+/profile/work
+
+# ISO Directory
+/profile/out
