@@ -1,4 +1,3 @@
-> ⚠️ THIS README AND REPO IS STILL IN DEVELOPMENT (KINDLY DOWNLOAD THE STABLE BUILD FROM REALSE)
 # Arcade-OS
 
 > A lightweight, fast, and beautifully customized Linux distribution built on Arch Linux — designed to run smoothly on low-end hardware while delivering a modern desktop experience.
