@@ -1,0 +1,8 @@
+root:x:0:root
+wheel:x:998:arcade
+network:x:997:arcade
+audio:x:996:arcade
+video:x:995:arcade
+storage:x:994:arcade
+optical:x:993:arcade
+arcade:x:1000:

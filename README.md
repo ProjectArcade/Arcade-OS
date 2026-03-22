@@ -50,7 +50,7 @@ sudo mkarchiso -v -w /tmp/arcade-work -o ./out Arcade-os/
 
 ```
 Arcade-OS/
-└── Arcade-os/
+└── Arcade-OS/
     ├── profiledef.sh
     ├── packages.x86_64
     ├── pacman.conf
@@ -62,6 +62,13 @@ Arcade-OS/
 ```
 
 ---
+
+## Live Session Credentials
+
+| Field | Value |
+|---|---|
+| Username | `arcade` |
+| Password | `arcade` |
 
 ## License
 
