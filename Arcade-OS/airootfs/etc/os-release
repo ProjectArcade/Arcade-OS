@@ -1,0 +1,12 @@
+cat > Arcade-OS/airootfs/etc/os-release << 'EOF'
+NAME="Arcade Linux"
+PRETTY_NAME="Arcade Linux"
+ID=arcadelinux
+ID_LIKE=arch
+BUILD_ID=rolling
+ANSI_COLOR="38;2;23;147;209"
+HOME_URL="https://github.com/ProjectArcade/Arcade-OS"
+DOCUMENTATION_URL="https://github.com/ProjectArcade/Arcade-OS/wiki"
+SUPPORT_URL="https://github.com/ProjectArcade/Arcade-OS/issues"
+BUG_REPORT_URL="https://github.com/ProjectArcade/Arcade-OS/issues"
+LOGO=arcadelinux
