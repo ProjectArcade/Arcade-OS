@@ -33,3 +33,9 @@ Thumbs.db
 *.vmdk
 *.vdi
 qemu-*/
+
+# Abhinav's Corner 
+ tp.md
+ Diry.md
+ thoughts.md
+ fixANDnotes.md

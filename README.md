@@ -53,7 +53,8 @@ qemu-system-x86_64 \
   -m 2G \
   -cdrom out/arcadelinux-*.iso \
   -boot d \
-  -vga vmware
+  -vga virtio \
+  -enable-kvm
 ```
 
 ## Booting on Real Hardware (Highly Recommended for Developers)
