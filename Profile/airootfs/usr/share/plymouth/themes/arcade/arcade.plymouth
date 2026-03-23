@@ -1,8 +1,8 @@
 [Plymouth Theme]
 Name=Arcade
-Description=Arcade Linux Boot Screen
-ModuleName=spinner
+Description=Arcade Linux Boot Splash
+ModuleName=script
 
-[spinner]
-Title=Arcade Linux
-ShowDelay=0
+[script]
+ImageDir=/usr/share/plymouth/themes/arcade
+ScriptFile=/usr/share/plymouth/themes/arcade/arcade.script

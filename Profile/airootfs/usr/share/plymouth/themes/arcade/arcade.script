@@ -1,0 +1,43 @@
+# ── Arcade Linux Plymouth Theme ──────────────────────
+
+# Screen
+screen_width  = Window.GetWidth();
+screen_height = Window.GetHeight();
+
+# ── Background (solid black) ──────────────────────────
+Window.SetBackgroundTopColor(0, 0, 0);
+Window.SetBackgroundBottomColor(0, 0, 0);
+
+# ── Logo ─────────────────────────────────────────────
+logo_image  = Image("logo.png");
+logo_sprite = Sprite(logo_image);
+logo_x = (screen_width  - logo_image.GetWidth())  / 2;
+logo_y = (screen_height - logo_image.GetHeight()) / 2;
+logo_sprite.SetX(logo_x);
+logo_sprite.SetY(logo_y);
+logo_sprite.SetZ(10);
+
+# ── Progress Bar (commented out — add later) ─────────
+# bar_width = 200;
+# bar_y     = logo_y + logo_image.GetHeight() + 40;
+# bar_x     = (screen_width - bar_width) / 2;
+# track_image  = Image("bar_track.png");
+# track_sprite = Sprite(track_image);
+# track_sprite.SetX(bar_x);
+# track_sprite.SetY(bar_y);
+# track_sprite.SetZ(9);
+# fill_image = Image("bar_fill.png");
+# Plymouth.SetBootProgressFunction(
+#   fun(time, prog) {
+#     fill_width = Math.Int(bar_width * prog);
+#     if (fill_width > 0) {
+#       new_fill = fill_image.Scale(fill_width, 4);
+#       fill_sprite = Sprite(new_fill);
+#       fill_sprite.SetX(bar_x);
+#       fill_sprite.SetY(bar_y);
+#       fill_sprite.SetZ(10);
+#     }
+#   }
+# );
+
+Plymouth.SetMessageFunction(fun(text) { });

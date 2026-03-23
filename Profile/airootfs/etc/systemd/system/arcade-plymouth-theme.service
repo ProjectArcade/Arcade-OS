@@ -1,0 +1,13 @@
+[Unit]
+Description=Set Arcade Plymouth Theme
+DefaultDependencies=no
+Before=plymouth-start.service
+ConditionPathExists=/usr/share/plymouth/themes/arcade/arcade.plymouth
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/plymouth-set-default-theme -R arcade
+RemainAfterExit=yes
+
+[Install]
+WantedBy=sysinit.target
