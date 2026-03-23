@@ -29,7 +29,7 @@ git clone https://github.com/ProjectArcade/Arcade-OS
 cd Arcade-OS
 
 # 2. Build the ISO (requires root)
-sudo mkarchiso -v -w /tmp/arcade-work -o ./out Arcade-os/
+sudo mkarchiso -v -w work/ -o out/ .
 
 # 3. ISO will be in ./out/
 ls -lh out/
@@ -45,7 +45,7 @@ sudo mkarchiso -v -w work/ -o out/ .
 
 ## Testing (QEMU)
 ```bash
-# Install QEMU
+# Install QEMU (Only for build if not installed)
 sudo pacman -S qemu-full
 
 # Boot the ISO
