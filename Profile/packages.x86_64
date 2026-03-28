@@ -129,20 +129,21 @@ fastfetch
 figlet
 zsh-autosuggestions
 
-# For Splash
+# Splash
 plymouth
 
 # Desktop
-xfce4
+plasma-desktop
+plasma-nm
+kde-gtk-config
+breeze
+kscreen
 xorg-server
-xorg-xinit
-xfce4-session
 
-# Display manager
-lightdm
-lightdm-gtk-greeter
+# Display manager  
+sddm
 
-# Fonts (UI breaks without these)
+# Fonts
 noto-fonts
 ttf-dejavu
 
@@ -153,3 +154,5 @@ partitionmanager
 
 # Network
 networkmanager
+
+xorg-xrandr
