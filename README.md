@@ -1,87 +1,114 @@
 # Arcade-OS
 
-> A lightweight, fast, and beautifully customized Linux distribution built on Arch Linux — designed to run smoothly on low-end hardware while delivering a modern desktop experience.
+> A lightweight, fast, and customized Arch Linux distribution designed to run smoothly on low-end hardware while still providing a modern desktop experience.
 
 [![Arch Linux](https://img.shields.io/badge/based%20on-Arch%20Linux-1793D1?logo=arch-linux&logoColor=white)](https://archlinux.org)
-[![License](https://img.shields.io/badge/license-GPL--v2-blue)](LICENSE)
+[![License](https://img.shields.io/badge/license-GPL--v3-blue)](LICENSE)
 [![Status](https://img.shields.io/badge/status-alpha-orange)]()
 
 ---
 
-> ⚠️ THIS README AND REPO IS STILL IN DEVELOPMENT (KINDLY DOWNLOAD THE STABLE BUILD FROM RELEASE)
+> ⚠️ This repository is still in active development.
 >
-> Some steps may not work on your machine — still refining for a stable build.
+> Some steps may not work on every machine yet. For daily use, download the latest stable release.
 
 ## Requirements
 
-- Arch Linux machine or VM to build
-- `archiso` and `git` installed
+- Arch Linux host or VM for building
+- `archiso` and `git`
+
 ```bash
 sudo pacman -S archiso git
 ```
 
 ---
 
-## Fork & Build
+## Fork and Build
+
 ```bash
-# 1. Fork this repo on GitHub, then clone your fork
+# 1) Fork this repository, then clone your fork
 git clone https://github.com/ProjectArcade/Arcade-OS
 cd Arcade-OS
 
-# 2. Build the ISO (requires root)
-sudo mkarchiso -v -w work/ -o out/ .
+# 2) Build the ISO from the profile directory (requires root)
+sudo mkarchiso -v -w Profile/work -o Profile/out Profile
 
-# 3. ISO will be in ./out/
-ls -lh out/
+# 3) Built ISO output
+ls -lh Profile/out/
 ```
 
-### Clean rebuild
+### Clean Rebuild
+
 ```bash
-sudo rm -rf ./work ./out
-sudo mkarchiso -v -w work/ -o out/ .
+sudo rm -rf Profile/work Profile/out
+sudo mkarchiso -v -w Profile/work -o Profile/out Profile
 ```
 
 ---
 
-## Testing (QEMU)
+## Testing in QEMU
+
 ```bash
-# Install QEMU (Only for build if not installed)
+# Install QEMU (if not already installed)
 sudo pacman -S qemu-full
 
 # Boot the ISO
 qemu-system-x86_64 \
   -m 2G \
-  -cdrom out/arcadelinux-*.iso \
+  -cdrom Profile/out/arcadelinux-*.iso \
   -boot d \
   -vga std \
   -enable-kvm
 ```
 
-## Booting on Real Hardware (Highly Recommended for Developers [Not Recommended for ALpha and Beta version])
+## Booting on Real Hardware
+
 ```bash
-# Find your USB drive (e.g. /dev/sdb — double check before running)
+# Find your USB drive first (for example: /dev/sdb)
 lsblk
 
-# Flash the ISO
-sudo dd if=out/arcadelinux-*.iso of=/dev/sdX bs=4M status=progress oflag=sync
+# Write the ISO to USB (replace /dev/sdX with your actual device)
+sudo dd if=Profile/out/arcadelinux-*.iso of=/dev/sdX bs=4M status=progress oflag=sync
 ```
 
-Then plug the USB into your machine, reboot, and select it from your BIOS boot menu.
+Then reboot and choose the USB device from your firmware/BIOS boot menu.
 
 ---
 
 ## Project Structure
-```
+
+```text
 Arcade-OS/
-└── Arcade-OS/
-    ├── profiledef.sh
+├── changelog.md
+├── Diary.md
+├── LICENSE
+├── README.md
+├── local-repo/
+│   ├── arcade-local.db
+│   ├── arcade-local.files
+│   └── calamares-3.4.2-2-x86_64.pkg.tar.zst
+└── Profile/
+    ├── bootstrap_packages
     ├── packages.x86_64
     ├── pacman.conf
-    ├── bootstrap_packages
+    ├── profiledef.sh
     ├── airootfs/
+    │   ├── etc/
+    │   │   ├── calamares/
+    │   │   ├── systemd/
+    │   │   ├── pam.d/
+    │   │   ├── modprobe.d/
+    │   │   └── ...
+    │   ├── home/arcade/
+    │   ├── root/
+    │   └── usr/
+    │       ├── local/
+    │       └── share/
     ├── efiboot/
     ├── grub/
-    └── syslinux/
+    ├── syslinux/
+    ├── out/          # generated build output
+    └── work/         # generated build workspace
 ```
 
 ---
@@ -89,10 +116,10 @@ Arcade-OS/
 ## Live Session Credentials
 
 | Field | Value |
-|---|---|
+| --- | --- |
 | Username | `arcade` |
 | Password | `arcade` |
 
 ## License
 
-GPL-3.0 — see [LICENSE](LICENSE) for details.
+GPL-3.0. See [LICENSE](LICENSE) for details.
