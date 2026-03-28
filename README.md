@@ -95,4 +95,4 @@ Arcade-OS/
 
 ## License
 
-GPL-2.0 — see [LICENSE](LICENSE) for details.
+GPL-3.0 — see [LICENSE](LICENSE) for details.
