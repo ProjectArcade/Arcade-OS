@@ -6,3 +6,5 @@ video:x:995:arcade
 storage:x:994:arcade
 optical:x:993:arcade
 arcade:x:1000:
+autologin:x:972:arcade
+shadow:x:42:

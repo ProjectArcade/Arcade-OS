@@ -3,6 +3,9 @@ out/
 *.iso
 *.img
 
+# Local package repo (build-time only, not portable)
+local-repo/
+
 # Build work directory
 /tmp/arcade-work/
 work/
@@ -35,7 +38,7 @@ Thumbs.db
 qemu-*/
 
 # Abhinav's Corner 
- tp.md
- Diry.md
- thoughts.md
- fixANDnotes.md
+tp.md
+Diry.md
+thoughts.md
+fixANDnotes.md

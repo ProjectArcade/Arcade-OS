@@ -1,7 +1,6 @@
 alsa-utils
 amd-ucode
 arch-install-scripts
-archinstall
 b43-fwcutter
 base
 bcachefs-tools
@@ -129,4 +128,28 @@ zsh
 fastfetch
 figlet
 zsh-autosuggestions
+
+# For Splash
 plymouth
+
+# Desktop
+xfce4
+xorg-server
+xorg-xinit
+xfce4-session
+
+# Display manager
+lightdm
+lightdm-gtk-greeter
+
+# Fonts (UI breaks without these)
+noto-fonts
+ttf-dejavu
+
+# Installer
+calamares
+kpmcore
+partitionmanager
+
+# Network
+networkmanager

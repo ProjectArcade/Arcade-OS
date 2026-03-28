@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Install Arcade Linux
+Exec=sudo calamares
+Type=Application
+Terminal=false
