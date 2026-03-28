@@ -3,7 +3,7 @@
 
 --- 
 
-> ## 23 March 2026 [ALPHA-released]
+> ## 23 March 2026 [ALPHA-released] [Removed due to Secuirty Failure]
 
 ### Initial Alpha Release
 - This is the **first public alpha build** of Arcade Linux.  

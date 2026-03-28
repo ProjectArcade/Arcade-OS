@@ -53,11 +53,11 @@ qemu-system-x86_64 \
   -m 2G \
   -cdrom out/arcadelinux-*.iso \
   -boot d \
-  -vga virtio \
+  -vga std \
   -enable-kvm
 ```
 
-## Booting on Real Hardware (Highly Recommended for Developers)
+## Booting on Real Hardware (Highly Recommended for Developers [Not Recommended for ALpha and Beta version])
 ```bash
 # Find your USB drive (e.g. /dev/sdb — double check before running)
 lsblk
