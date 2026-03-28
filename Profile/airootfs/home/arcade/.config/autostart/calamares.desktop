@@ -1,5 +1,6 @@
 [Desktop Entry]
-Name=Install Arcade Linux
+Name=Arcade Installer
 Exec=sudo calamares
+Icon=/usr/share/calamares/branding/arcade/installerLogo.png
 Type=Application
 Terminal=false

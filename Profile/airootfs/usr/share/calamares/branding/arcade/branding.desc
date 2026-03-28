@@ -10,11 +10,11 @@ sidebar: qml
 navigation: widget
 
 strings:
-    productName:         Arcade Linux
-    shortProductName:    Arcade Linux
-    versionedName:       Arcade Linux
-    shortVersionedName:  Arcade Linux
-    bootloaderEntryName: Arcade Linux
+    productName:         Arcade
+    shortProductName:    Arcade
+    versionedName:       Arcade
+    shortVersionedName:  Arcade
+    bootloaderEntryName: Arcade
     productUrl:          #
     supportUrl:          #
     knownIssuesUrl:      #
@@ -22,7 +22,7 @@ strings:
     donateUrl:           #
 
 images:
-    productIcon:         "logo.png"
+    productIcon:         "installerLogo.png"
     productLogo:         "logo.png"
     productWelcome: "welcome.png"
 
