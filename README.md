@@ -40,8 +40,8 @@ ls -lh Profile/out/
 ### Clean Rebuild
 
 ```bash
-sudo rm -rf Profile/work Profile/out
-sudo mkarchiso -v -w Profile/work -o Profile/out Profile
+sudo rm -rf /Profile/work /Profile/out
+sudo mkarchiso -v -w work/ -o out/ Profile/
 ```
 
 ---
@@ -55,7 +55,7 @@ sudo pacman -S qemu-full
 # Boot the ISO
 qemu-system-x86_64 \
   -m 2G \
-  -cdrom Profile/out/arcadelinux-*.iso \
+  -cdrom out/arcadelinux-*.iso \
   -boot d \
   -vga std \
   -enable-kvm

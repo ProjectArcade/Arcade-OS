@@ -1,0 +1,96 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background (rounded square, dark gradient) -->
+  <defs>
+    <radialGradient id="bgGradient" cx="50%" cy="40%" r="80%">
+      <stop offset="0%" stop-color="#2f3242"/>
+      <stop offset="100%" stop-color="#1c1e2b"/>
+    </radialGradient>
+
+    <!-- Petal gradients -->
+    <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff3b5c"/>
+      <stop offset="100%" stop-color="#ff6a3d"/>
+    </linearGradient>
+
+    <linearGradient id="grad2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff7a3d"/>
+      <stop offset="100%" stop-color="#ffb347"/>
+    </linearGradient>
+
+    <linearGradient id="grad3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffd54a"/>
+      <stop offset="100%" stop-color="#9be15d"/>
+    </linearGradient>
+
+    <linearGradient id="grad4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6bdc5c"/>
+      <stop offset="100%" stop-color="#3ec7a6"/>
+    </linearGradient>
+
+    <linearGradient id="grad5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#36cfc9"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+
+    <linearGradient id="grad6" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4facfe"/>
+      <stop offset="100%" stop-color="#7b61ff"/>
+    </linearGradient>
+
+    <linearGradient id="grad7" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ff4ecd"/>
+    </linearGradient>
+
+    <linearGradient id="grad8" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff4ecd"/>
+      <stop offset="100%" stop-color="#ff3b8d"/>
+    </linearGradient>
+
+    <!-- Petal shape -->
+    <path id="petal" d="
+      M 512 240
+      C 580 240, 620 320, 512 440
+      C 404 320, 444 240, 512 240
+      Z" />
+
+  </defs>
+
+  <!-- Background -->
+  <rect x="32" y="32" width="960" height="960" rx="220" fill="url(#bgGradient)"/>
+
+  <!-- Petals (rotated around center) -->
+  <g transform="rotate(0 512 512)">
+    <use href="#petal" fill="url(#grad1)"/>
+  </g>
+
+  <g transform="rotate(45 512 512)">
+    <use href="#petal" fill="url(#grad2)"/>
+  </g>
+
+  <g transform="rotate(90 512 512)">
+    <use href="#petal" fill="url(#grad3)"/>
+  </g>
+
+  <g transform="rotate(135 512 512)">
+    <use href="#petal" fill="url(#grad4)"/>
+  </g>
+
+  <g transform="rotate(180 512 512)">
+    <use href="#petal" fill="url(#grad5)"/>
+  </g>
+
+  <g transform="rotate(225 512 512)">
+    <use href="#petal" fill="url(#grad6)"/>
+  </g>
+
+  <g transform="rotate(270 512 512)">
+    <use href="#petal" fill="url(#grad7)"/>
+  </g>
+
+  <g transform="rotate(315 512 512)">
+    <use href="#petal" fill="url(#grad8)"/>
+  </g>
+
+</svg>
