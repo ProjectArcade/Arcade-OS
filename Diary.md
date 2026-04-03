@@ -1,7 +1,7 @@
 > ### Made by Abhinav, for Abhinav, to track current progress (If you’re a user or developer reading this, there are very few changes here. Honestly, I didn’t expect anyone to read this since it’s private… but if you’re here, it probably means I’m cooked. lol. Even I don’t really know what I’m writing here while the build is in progress.)
 
 --- 
-### 22 March — Very Sad Day of My Life LOL
+### 22 March 2026 — Very Sad Day of My Life LOL but it was the init for this project damm lol
 
 
     - Did the booting thing with the Arcade logo.  
@@ -19,7 +19,7 @@
 
 --- 
 
-### 23 March
+### 23 March 2026 
 
 
 - Let’s start and finish this splash logo today.  
@@ -42,7 +42,7 @@
 
 
 ---
-### 25 March 
+### 25 March 2026 
 
 - Let’s add a GUI installer — this CLI might scare non-technical users.
 - Spent 1 hour on it, but I don’t think I’m doing it the right way. I need to watch some YouTube tutorials. I also ended up adding more unnecessary files.
@@ -50,7 +50,7 @@
 - I think I should first start with Calamares. Later on, I will build my own custom installer — that’s very cool!
 
 --- 
-### 28 March 
+### 28 March 2026 
 
 - Did some research on Calamares and finally built my own Calamares installer. That was tough. Thankfully, I found a tutorial and some open-source projects that helped me.
 - Tried to make it work with ARCHISO.
@@ -73,3 +73,11 @@
 - It’s 8:48, and finally my Calamares setup with my theme fix is done!! Now I’m waiting for the build to complete so I can test it in QEMU. After this success, I will complete my college work and focus on academics and my YouTube video. It’s about 100 days —I haven’t posted anything, and subscribers are commenting for part 2 of the video.
 - Finally, it’s 9:53, and my Calamares in the ISO is working—woooooooow! Now I need to add the custom GUI and icon layer in my Arcade.
 - That’s a lot for one day. Now let me take a break for college work. Before adding the GUI layer, I need to study how to customize the GUI. Maybe I’ll fork an existing project and build on top of it, or, knowing myself, I might end up writing everything from scratch. I couldn’t fix the black sidebar in Calamares, so I wrote the sidebar code myself. Maybe I’ll also add support for GIFs in Calamares so I can replace welcome.png with welcome.gif.
+
+
+### 4 April 2026 
+
+- Hello, I’m back. I just updated the year in the diary. I don’t even know how much time it will take to complete, but I will try to finish it. I already have many ideas to work on. For now, I’ve decided to do everything alone. I don’t trust that anyone else will be as interested in this project as I am.
+-I got a lot done during this gap. I created my own icon pack with all the necessary icons, and I’ve added it to the ISO, which is very cool. I also created my Arcade boot splash, and now I’m adding it to my ISO. If it works, I’ll start customizing the KDE GUI. I’ll try to make it look unique without copying any existing system themes.
+-Honestly, if I get good enough at this, I might even build my own desktop environment. That would probably be the coolest thing I’ll ever build—something, that might no one use, but at least I will definitely use.
+- I want to learn robotics so I can build a robot that can stay with me and talk to me without any rate limits.

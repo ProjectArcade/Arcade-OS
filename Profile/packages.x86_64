@@ -135,6 +135,10 @@ plymouth
 # Desktop
 plasma-desktop
 plasma-nm
+dolphin
+konsole
+systemsettings
+discover
 kde-gtk-config
 breeze
 kscreen

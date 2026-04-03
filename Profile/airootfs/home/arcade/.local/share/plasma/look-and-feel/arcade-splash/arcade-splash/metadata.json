@@ -1,0 +1,20 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel/Splash",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "abhinavthakurv22@gmail.com",
+                "Name": "Abhinav"
+            }
+        ],
+        "Category": "",
+        "Description": "Welcome to Arcade a modern, fast Arch Distro",
+        "Id": "arcade-splash",
+        "License": "GPLv3",
+        "Name": "Arcade Splash Oled",
+        "Website": "https://github.com/ProjectArcade/"
+    },
+    "Keywords": "Desktop;Workspace;Appearance;Look and Feel;Logout;Lock;Suspend;Shutdown;Hibernate;Oled;",
+    "X-Plasma-APIVersion": "2"
+}
+
